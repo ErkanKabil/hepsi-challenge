@@ -77,7 +77,7 @@ const PollList = ({polls}) => {
     const indexOfLastItem = currentPage * itemPerPage
     const indexOfFirstItem = indexOfLastItem - itemPerPage
 
-    const currentData = data?.slice(indexOfFirstItem, indexOfLastItem)
+    const currentData = sortedData?.slice(indexOfFirstItem, indexOfLastItem)
 
 
     return (
