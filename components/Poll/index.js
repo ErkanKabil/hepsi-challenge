@@ -16,7 +16,7 @@ const Poll = () => {
             </PollHeader>
             <PollBody>
                 {
-                    polls?.length > 1 ? <PollList polls={polls}/> : <EmptyData />
+                    polls?.length > 0 ? <PollList polls={polls}/> : <EmptyData />
                 }
             </PollBody>
         </Wrapper>
