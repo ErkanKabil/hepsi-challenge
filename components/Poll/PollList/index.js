@@ -25,6 +25,8 @@ import Pagination from "../../Pagination";
 const PollList = ({polls}) => {
     const dispatch = useDispatch();
     const [data, setData] = useState(polls);
+    const [sortedData, setSortedData] = useState(polls);
+    const [sortType, setSortType] = useState(null)
     const [itemPerPage, setItemPerPage] = useState(5)
     const [currentPage, setCurrentPage] = useState(1)
     const [selectedItem, setSelectedItem] = useState()
@@ -34,15 +36,16 @@ const PollList = ({polls}) => {
         setCurrentPage(number + index)
     }
 
-    const handleSortSelect = (item) => {
+    const handleSortData = (item) => {
+        setSortType(item)
         const temp = data?.sort((a,b) => {
             if (item?.value === 0) {
                 return (b?.point - a?.point) || (b?.lastUpdate - a?.lastUpdate)
-            }else {
+            }else if (item?.value === 1) {
                 return a?.point - b?.point
             }
         })
-        setData([...temp])
+        setSortedData([...temp])
     }
 
     const removeItem = () => {
@@ -67,6 +70,10 @@ const PollList = ({polls}) => {
         setData(polls)
     }, [polls])
 
+    useEffect(() => {
+        handleSortData(sortType)
+    }, [data])
+
     const indexOfLastItem = currentPage * itemPerPage
     const indexOfFirstItem = indexOfLastItem - itemPerPage
 
@@ -78,13 +85,13 @@ const PollList = ({polls}) => {
             <Wrapper>
                 <SortDropdownWrapper>
                     <Dropdown
-                        onChange={(item) => handleSortSelect(item)}
+                        onChange={(item) => handleSortData(item)}
                         dropdownData={sortDropdownData}
                         placeHolder="Order by"
                     />
                 </SortDropdownWrapper>
                 {
-                    currentData?.map((item ) => <ListItem>
+                    currentData?.map((item ) => <ListItem key={item?.id}>
                         <RemoveButton onClick={() => setSelectedItem(item)} />
                         <PointsWrapper>
                             <Point>{item?.point}</Point> POINTS

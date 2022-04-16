@@ -43,7 +43,7 @@ const Dropdown = ({
 				<SelectedDropdown>
 					{label}
 				</SelectedDropdown>
-				<DropdownArrowIcon isActive={isActive} />
+				<DropdownArrowIcon isactive={isActive.toString()} /> {/*.toString kullanma sebebim; isActive şeklinde isimlendirince console hatası veriyordu. Bu şekilde değiştirmem gerektiğini söylüyordu*/}
 			</SelectedDropdownWrapper>
 			{isActive && (
 				<DropdownContent>

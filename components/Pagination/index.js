@@ -19,7 +19,7 @@ const Pagination = ({currentPage, itemPerPage, totalItems, paginate}) => {
             </PageButton>}
                 <Pages>
                     {
-                        pageNumbers?.map(number => <PageNumber onClick={() => paginate(number)}>{number}</PageNumber>)
+                        pageNumbers?.map(number => <PageNumber onClick={() => paginate(number)} key={number}>{number}</PageNumber>)
                     }
                 </Pages>
             {currentPage !== pageNumbers[pageNumbers.length - 1] && <PageButton

@@ -68,8 +68,8 @@ export const DropdownArrowIcon = styled(ArrowIconSvg)`
 	transition: transform .1s ease-in-out;
 	width: 20px;
 	margin: 0 5px;
-	${({ isActive }) =>
-		isActive &&
+	${({ isactive }) =>
+		isactive === "true" &&
 		css`
 			transform: rotate(180deg);
 		`};
