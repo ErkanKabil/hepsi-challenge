@@ -1,8 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+Projeyi çalıştırmak için aşağıdaki komut kullanılmaktadır.
 
 ```bash
 npm run dev
@@ -10,25 +6,22 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Eslint
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Yazılan kodların belli kurallara göre analiz edilmesini sağlamaktadır. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Test
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Projede unit test yazılıdır. Testten geçip geçmediğini `npm run test ` diyerek kontrol edebilirsiniz. 
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+-   Proje içerisinde ortak kullanılan dosyalar core klasörü altındadır. Değişiklikler ilgili klasörde/dosyada yapılmalıdır.
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    - Fonksiyonlar: utils
+    - Sayfa urlleri: routes/index.js
+    - Genel type tanımları: constants
+    - Redux yönetimi: redux
+    - Hooklar: hooks
+    - Global style: styles
+    - Test: tests
