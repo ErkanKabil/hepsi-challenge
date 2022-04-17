@@ -4,14 +4,13 @@ import thunk from "redux-thunk";
 import { createWrapper } from "next-redux-wrapper";
 import rootReducer from "../reducers/rootReducer";
 
-const middlewares = [];
+export const middlewares = [];
 middlewares.push(thunk);
 
 const logger = createLogger({
-		collapsed: true,
+	collapsed: true,
 });
 middlewares.push(logger);
-
 
 const makeConfiguredStore = (reducer, initialState) => createStore(reducer, initialState, applyMiddleware(...middlewares));
 
@@ -19,11 +18,14 @@ export const makeStore = (initialState) => {
 	const isServer = typeof window === "undefined";
 
 	if (isServer) {
+		// eslint-disable-next-line no-param-reassign
 		initialState = initialState || { fromServer: "" };
 		return makeConfiguredStore(rootReducer, initialState);
 	}
 
+	// eslint-disable-next-line global-require
 	const { persistStore, persistReducer } = require("redux-persist");
+	// eslint-disable-next-line global-require
 	const storage = require("redux-persist/lib/storage").default;
 
 	const persistConfig = {

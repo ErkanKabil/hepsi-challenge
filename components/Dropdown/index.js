@@ -37,24 +37,23 @@ const Dropdown = ({
 
 	return (
 		<DropdownWrapper ref={dropdownContainerRef} {...props}>
-			<SelectedDropdownWrapper
-				onClick={showDropdownHandler}
-			>
-				<SelectedDropdown>
-					{label}
-				</SelectedDropdown>
-				<DropdownArrowIcon isactive={isActive.toString()} /> {/*.toString kullanma sebebim; isActive şeklinde isimlendirince console hatası veriyordu. Bu şekilde değiştirmem gerektiğini söylüyordu*/}
+			<SelectedDropdownWrapper onClick={showDropdownHandler}>
+				<SelectedDropdown>{label}</SelectedDropdown>
+				<DropdownArrowIcon isactive={isActive.toString()} />{" "}
+				{/* .toString kullanma sebebim; isActive şeklinde isimlendirince console hatası veriyordu. Bu şekilde değiştirmem gerektiğini söylüyordu */}
 			</SelectedDropdownWrapper>
 			{isActive && (
 				<DropdownContent>
-					{
-						dropdownData?.map((item) =>
-							<DropdownItem
-								key={item?.value}
-								value={item?.value}
-								onClick={() => handleSelectDropdownItem(item)} isSelected={value === item?.value}>{item?.label}</DropdownItem>)
-					}
-
+					{dropdownData?.map((item) => (
+						<DropdownItem
+							key={item?.value}
+							value={item?.value}
+							onClick={() => handleSelectDropdownItem(item)}
+							isSelected={value === item?.value}
+						>
+							{item?.label}
+						</DropdownItem>
+					))}
 				</DropdownContent>
 			)}
 		</DropdownWrapper>

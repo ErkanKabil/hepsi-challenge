@@ -1,41 +1,40 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+`;
 
 export const PageButton = styled.button`
-  width: 20px;
-  
-  svg {
-    width: 100%;
-    height: auto;
-  }
-  
-`
-export const Pages = styled.div`
-  display: flex;
-  align-items: center;
-`
-export const PageNumber = styled.button`
-  font-weight: bold;
-  font-size: 18px;
-  padding: 2px 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px;
-  
-  &:hover {
-    outline: 1px solid ${({ theme }) => theme.colors.primary};
-  }
+	width: 20px;
 
-  ${({ isActive }) =>
-    isActive &&
-    css`
-            outline: 1px solid ${({ theme }) => theme.colors.primary};
+	svg {
+		height: auto;
+		width: 100%;
+	}
+`;
+export const Pages = styled.div`
+	align-items: center;
+	display: flex;
+`;
+export const PageNumber = styled.button`
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	justify-content: center;
+	margin: 0 5px;
+	padding: 2px 5px;
+
+	&:hover {
+		outline: 1px solid ${({ theme }) => theme.colors.primary};
+	}
+
+	${({ isActive }) =>
+		isActive &&
+		css`
+			outline: 1px solid ${({ theme }) => theme.colors.primary};
 		`};
-`
+`;

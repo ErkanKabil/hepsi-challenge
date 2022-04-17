@@ -1,74 +1,73 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: rgba(0,0,0,.3);
-  z-index: 99;
-`
+	background-color: rgba(0, 0, 0, 0.3);
+	display: grid;
+	height: 100vh;
+	left: 0;
+	place-items: center;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 99;
+`;
 
 export const DialogWrapper = styled.div`
-  width: calc(100% - 30px);
-  max-width: 400px;
-  margin: 15px;
-  background-color: ${({ theme }) => theme.colors.white};
-  border: 1px solid rgba(228, 228, 228, 0.6);
-  box-shadow: 0 6px 12px rgba(50, 50, 71, 0.07);
-  border-radius: 4px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-`
+	background-color: ${({ theme }) => theme.colors.white};
+	border: 1px solid rgba(228, 228, 228, 0.6);
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(50, 50, 71, 0.07);
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	max-width: 400px;
+	overflow: hidden;
+	width: calc(100% - 30px);
+`;
 
 export const CloseDialogButton = styled.button`
-  width: 20px;
-  margin: 10px 10px 0 auto;
-`
+	margin: 10px 10px 0 auto;
+	width: 20px;
+`;
 
 export const DialogBody = styled.div`
-  padding: 16px 20px;
-  font-size: 18px;
-  line-height: 1.4;
-  text-align: center;
-`
+	font-size: 18px;
+	line-height: 1.4;
+	padding: 16px 20px;
+	text-align: center;
+`;
 
 export const SelectedItem = styled.div`
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  font-size: 22px;
-  margin-top: 4px;
-`
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 4px;
+	text-align: center;
+`;
 
 export const DialogFooter = styled.div`
-  padding: 10px 20px;
-  display: flex;
-  justify-content: flex-end;
-`
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 20px;
+`;
 
 export const Button = styled.button`
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  height: 32px;
-  color: ${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.success};
-  border-radius: 4px;
-  font-size: 18px;
-  &:not(:first-child) {
-    margin-left: 10px;
-  }
+	align-items: center;
+	background-color: ${({ theme }) => theme.colors.success};
+	border-radius: 4px;
+	color: ${({ theme }) => theme.colors.white};
+	display: inline-flex;
+	flex: 1;
+	font-size: 18px;
+	height: 32px;
+	justify-content: center;
+	&:not(:first-child) {
+		margin-left: 10px;
+	}
 
-  ${({ variant }) =>
-          variant === "danger" &&
-          css`
-            background-color: ${({ theme }) => theme.colors.danger};	
-          `}
-`
-
+	${({ variant }) =>
+		variant === "danger" &&
+		css`
+			background-color: ${({ theme }) => theme.colors.danger};
+		`}
+`;

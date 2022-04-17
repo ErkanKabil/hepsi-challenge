@@ -5,7 +5,7 @@ export const DropdownWrapper = styled.div`
 	border-radius: 4px;
 	height: 32px;
 	position: relative;
-	width: 100%
+	width: 100%;
 `;
 
 export const DropdownItem = styled.div`
@@ -13,8 +13,8 @@ export const DropdownItem = styled.div`
 	font-size: 14px;
 	font-weight: 600;
 	line-height: normal;
-	width: 100%;
 	padding: 10px 13px;
+	width: 100%;
 
 	&:hover {
 		background: ${({ theme }) => theme.colors.tertiary3};
@@ -52,26 +52,25 @@ export const SelectedDropdownWrapper = styled.div`
 `;
 
 export const SelectedDropdown = styled.div`
+	align-items: center;
+	border-right: 1px solid ${({ theme }) => theme.colors.tertiary3};
 	color: ${({ theme }) => theme.colors.primary};
+	display: flex;
 	flex: 1;
 	font-size: 14px;
 	font-weight: 600;
-	padding: 0 14px;
 	height: 100%;
-	display: flex;
-	align-items: center;
-	border-right: 1px solid ${({ theme }) => theme.colors.tertiary3};
+	padding: 0 14px;
 `;
 
 export const DropdownArrowIcon = styled(ArrowIconSvg)`
 	height: 20px;
-	transition: transform .1s ease-in-out;
-	width: 20px;
 	margin: 0 5px;
+	transition: transform 0.1s ease-in-out;
+	width: 20px;
 	${({ isactive }) =>
 		isactive === "true" &&
 		css`
 			transform: rotate(180deg);
 		`};
 `;
-
