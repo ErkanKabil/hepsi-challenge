@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25fa61b1-1684-471e-a2d4-b793736c404b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/tests/index.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/mocks/pollsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Dialog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Dialog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Dialog/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Dialog/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Dropdown/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Dropdown/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Dropdown/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Dropdown/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EmptyData/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EmptyData/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EmptyData/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EmptyData/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Forms/AddNewLinkForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/AddNewLinkForm/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Forms/AddNewLinkForm/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/AddNewLinkForm/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Forms/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Forms/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layouts/mainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layouts/mainLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layouts/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layouts/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Pagination/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Pagination/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Pagination/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Poll/AddPollButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/AddPollButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Poll/AddPollButton/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/AddPollButton/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Poll/PollList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/PollList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Poll/PollList/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/PollList/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Poll/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Poll/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Poll/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Toast/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Toast/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Toast/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Toast/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/hooks/useOnClickOutside.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/hooks/useOnClickOutside.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/redux/actions/pollActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/redux/actions/pollActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/redux/reducers/pollReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/redux/reducers/pollReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/redux/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/redux/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/add-link/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add-link/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/AddLink/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/AddLink/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/AddLink/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/AddLink/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

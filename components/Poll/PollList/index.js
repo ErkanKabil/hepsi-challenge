@@ -46,7 +46,7 @@ const PollList = ({ polls }) => {
 			if (item?.value === 1) {
 				return a?.point - b?.point;
 			}
-			return 0;
+			return b?.createdDate - a?.createdDate;
 		});
 		setSortedData([...temp]);
 	};

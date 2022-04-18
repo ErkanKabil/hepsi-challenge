@@ -5,10 +5,7 @@ import PollList from "./PollList";
 import EmptyData from "../EmptyData";
 
 const Poll = () => {
-	const polls = useSelector((state) => {
-		const sortedData = state?.polls?.polls?.sort((a, b) => b?.createdDate - a?.createdDate);
-		return sortedData;
-	});
+	const { polls } = useSelector((state) => state?.polls);
 
 	return (
 		<Wrapper>
